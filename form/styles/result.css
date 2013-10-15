@@ -1,0 +1,273 @@
+﻿.column.column-left, .column.column-right {
+	width:330px;
+}
+.column.column-left {
+float:left;
+}
+.column.column-right {
+float:right;
+margin-right:20px;
+}
+
+.step-title {
+	font-size: 20px;	
+}
+div.mealSign img {
+width:30px;
+height:30px;
+
+}
+.column.column-left.plate, .column.column-right.plate {
+	margin:5px;
+}
+#mealGroups img {
+	position:absolute;
+	}
+.mealGroup .quantityLabel{
+	position:static;
+	font: bold italic 16px 'georgia';
+}
+.mealGroup {
+width:20px;
+height:20px;
+}
+
+div.hline {
+	width:620px;
+	margin:0 auto;
+	background-color: rgba(26,59,66,.1);
+	height:1px;
+	}
+div.clear{
+	clear:both;
+	width:100%;
+	height:20px;
+	}
+	
+#tips-a .step-title,
+#tips .step-title {
+	margin:8px 10px;
+	}
+#tips-a .step-title.tip,
+#tips .step-title.tip {
+	font-weight:bold;
+	font-style:normal;
+	font-size:16px;
+}
+
+.tip-desc {
+	font-weight:normal;
+	font-style:normal;
+	font-size:14px;
+	text-align:left;
+	margin:10px 30px;
+	}
+.tip-desc .li{
+	margin-top:10px;
+	list-style: none;
+	position:relative;
+	padding-left: 15px;
+	margin:20px 30px;
+}
+.tip-desc .ul{
+	padding-left:20px;
+}
+
+.tip-desc .li:before {
+    font-size:72px;
+    vertical-align:top;
+    line-height:0;
+	position: absolute; left: -18px; top: 4px;
+}
+
+#step-6{
+	height: auto;
+}
+
+.column.footer {
+	font-size:12px;
+	text-align:center;
+	margin:30px 20px;
+}
+.column.footer .social-head{
+	font-style:italic;
+	font-size: 18px;
+	margin:20px 0 10px 0;
+}
+
+div#getmail{
+	margin-top:20px;
+	position:relative;
+	line-height:40px;
+	height:40px;
+}
+input[name="email"]{
+	border: 1px solid #1a3b42;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	font-size:18px;
+	height: 100%;
+	width:280px;
+	position:absolute;
+	left:0;
+	top:0;
+    padding-bottom: 0;
+    padding-left: 8px;
+    padding-top: 0;
+	line-height:40px;
+}
+div#submit {
+	position:absolute;
+	right:0;
+	top:0;
+	width:79px;
+	height:42px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #ed4d21;
+	font-size:14px;
+	padding:0;
+	cursor:pointer;
+}
+div#submit:hover{
+	background-color: #1a3b42;
+}
+
+div.clear.spacer {
+	height:60px;
+	}
+	
+.social a{
+	margin:3px;
+	}
+	
+.social a:hover{
+	opacity:.7;
+}
+.column.footer.spacer{
+	float:left;
+	height:140px;
+	width:1px;
+	background-color:rgba(29,59,66,.1);
+	margin:0;
+	margin-top:30px;
+}
+
+#mail_added {
+	cursor:default;
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	width:330px;
+	height:20px;
+	z-index:10;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #ed4d21;
+	font-size:14px;
+	padding:10px 0;
+	line-height:18px;
+}
+
+#steps-bar {
+	display:block !important;
+}
+a, a img {
+	border:none;
+	outlne:none;
+}
+
+
+#tabs div.step-button {
+	position:relative;
+	font-family: 'georgia';
+	text-align:center;
+	margin: 10px;
+	margin-right: -20px;
+	width: 280px;
+	text-transform: none;
+	font-size: 16px;
+}
+#tabs div.step-button:hover {
+	background-color:#ed4d21;
+}
+#tabs div.step-button.inactive:hover {
+	background-color:#1a3b42;
+}
+#tabs img.tip.result {
+	position: absolute;
+	display: inline-block;
+	left: 152px;
+	top: 33px;
+}
+#tabs div.inactive img.tip.result {
+	display:none;
+}
+
+div.tab-pane[data-tab="1"]{
+	display:none;
+}
+.step-title.med-tip {
+	font-size:18px !important;
+	text-align:left;
+	margin-left:30px !important;
+	margin-top: 10px !important;
+}
+.step-title.big-tip {
+	font-size:24px !important;
+	text-align:left;
+	margin-left:30px !important;
+	margin-top: 40px !important;
+}
+
+div[data-role="activity-tips"] li{
+	margin:20px 0;
+}
+
+.activity-time-preview {
+	background-color: #f6f6f6;
+	border: 2px solid #959595;
+	color: #1a3b42;
+	width: 300px;
+	padding: 20px 0 30px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-style: italic;
+	font-size:56px;
+	font-family:georgia;
+	margin-top: 40px;
+}
+
+.tip-desc .li img{
+	position: absolute;
+	left: -35px;
+}
+
+.activities-pane .column-left,
+.activities-pane .column-right {
+	width:300px;
+}
+.activities-pane .column-left{
+	float:left;
+	margin-left:30px;
+}
+
+.activities-pane .column-right{
+	float:right;
+	margin-right:32px;
+}
+
+.clear.40{
+	height:40px;
+	}
+	
+#step-6 {
+		min-height:500px;
+	}

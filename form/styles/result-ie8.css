@@ -1,0 +1,87 @@
+﻿.button,
+div#steps-bar,
+div#steps-container,
+div.step div.step-overlay,
+div.step,
+div.overlay-visible div.menu div.meal-btn:hover,
+.mealGroup>.plusSign, .mealGroup>.minusSign,
+#age-slider, #age-slider .indicator,
+#age-slider .point,
+#age-value-preview,
+.circle-edges,
+.round-button,
+#activities .activity-image,
+#activities-total {
+	behavior: url(styles/ie8/PIE.htc);
+}
+table tr {
+	height:76px;
+}
+table * {
+	font-family: 'populairemedium';
+	font-size:22px;
+	color: #1a3b42;
+	font-weight:normal;
+}
+table tr:hover {
+	color: #f8514f;
+}
+table .ask-sign {
+	width:21px;
+	height:21px;
+	background-image:url('../img/ask_small.jpg');
+	background-position: 0 0;
+	cursor: pointer;
+}
+table .ask-sign:hover {
+	background-position: 0 -21px;
+}
+table td {
+	width:61px;
+	height:61px;
+}
+
+table tr .meal-image {
+	width:61px;
+	height:61px;
+	background-position: 0 0;
+	position:relative;
+	z-index:1000;
+}
+table td.name {
+	text-align:left;
+}
+table tr .meal-image:hover{
+	background-position: 0 -61px;
+}
+
+table tr.milk .meal-image {
+	background-image:url('../img/milk_big.png');
+}
+table tr.discret .meal-image {
+	background-image:url('../img/discret_big.png');
+}
+table tr.fruit .meal-image {
+	background-image:url('../img/apple_big.png');
+}
+table tr.cereals .meal-image {
+	background-image:url('../img/cereals_big.png');
+}
+
+table tr.meat .meal-image {
+	background-image:url('../img/meat_big.png');	
+}
+table tr.vegetables .meal-image {
+	background-image:url('../img/carrot_big.png');
+	height:64px;
+}
+table tr.vegetables .meal-image:hover {
+	background-position: 0 -64px;
+}
+table tr .value-field {
+	font-family:georgia;
+}
+
+.hline{
+	border-bottom:1px solid #ebebeb;
+}

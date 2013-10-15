@@ -1,0 +1,271 @@
+﻿.button,
+div#steps-bar,
+div#steps-container,
+div.step div.step-overlay,
+div.step,
+div.overlay-visible div.menu div.meal-btn:hover,
+.mealGroup>.plusSign, .mealGroup>.minusSign,
+#age-slider, #age-slider .indicator,
+#age-slider .point,
+#age-value-preview,
+.circle-edges,
+.round-button,
+#activities .activity-image,
+#getmail, #getmail *,
+#activities-total {
+	behavior: url(styles/ie8/PIE.htc);
+}
+
+.ie8 * { opacity: inherit; filter: inherit; }
+
+.gender_img {
+	display: inline-block;
+	background-position: 0 0;
+	cursor:pointer;
+	width:89px;
+	height:189px
+}
+.gender_img.active, .gender_img:hover {
+	background-position: 0 -200px;
+}
+.gender_img.inactive {
+	visibility:hidden;
+}
+
+#gender_female_img { background-image: url('../img/genders_female.jpg'); }
+#gender_male_img { background-image: url('../img/genders_male.jpg'); }
+
+.tickBox, .tick:hover .tickBox{
+	background-color: transparent !important;
+}
+.tickBox{
+	width:21px;
+	height:21px;
+	background-position: -21px 0;
+	background-image: url('../img/check.jpg');
+}
+.tickBox.checked{
+	background-position: 0 0;	
+}
+
+#overlay-fade {
+	position:absolute;
+	background-color:#fff;
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	z-index:2000;
+	display:none;
+}
+#age-under-twelve {
+	display:block;
+	display:none;
+	width:420px;
+	height:52px;
+	background-image:url('../img/underTwelve.jpg');
+	background-color:transparent;
+	margin:0;
+	padding:0;
+	outline:0;
+}
+	
+#female-options {
+	display:block;
+	visibility:hidden;
+}
+
+#next-button {
+	width:163px;
+	height:72px;
+	background-image:url('../img/nextButton.jpg');
+	background-position:0 0;
+	cursor:pointer;
+	background-color:transparent;
+	border:none;
+	text-shadow:none;
+	position:relative;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	margin-left:280px;
+}
+#next-button.disabled {
+	background-position:0 -72px;
+	cursor:default;
+}
+#step-2 table {
+		margin-left:150px;
+	}
+#step-2 table tr {
+	height:76px;
+}
+#step-2 table * {
+	font-family: 'populairemedium';
+	font-size:25px;
+	color: #1a3b42;
+	font-weight:normal;
+}
+#step-2 table tr:hover {
+	color: #f8514f;
+}
+#step-2 table .ask-sign {
+	width:21px;
+	height:21px;
+	background-image:url('../img/ask_small.jpg');
+	background-position: 0 0;
+	cursor: pointer;
+}
+#step-2 table .ask-sign:hover {
+	background-position: 0 -21px;
+}
+#step-2 table td {
+	width:61px;
+	height:61px;
+}
+
+#step-2 table tr .meal-image {
+	width:61px;
+	height:61px;
+	background-position: 0 0;
+	position:relative;
+	z-index:1000;
+}
+#step-2 table td.name {
+	width:350px;
+	padding-left:20px;
+}
+#step-2 table tr .meal-image:hover{
+	background-position: 0 -61px;
+}
+
+#step-2 table tr.milk .meal-image {
+	background-image:url('../img/milk_big.png');
+}
+#step-2 table tr.discret .meal-image {
+	background-image:url('../img/discret_big.png');
+}
+#step-2 table tr.fruit .meal-image {
+	background-image:url('../img/apple_big.png');
+}
+#step-2 table tr.cereals .meal-image {
+	background-image:url('../img/cereals_big.png');
+}
+
+#step-2 table tr.meat .meal-image {
+	background-image:url('../img/meat_big.png');	
+}
+#step-2 table tr.vegetables .meal-image {
+	background-image:url('../img/carrot_big.png');
+	height:64px;
+}
+#step-2 table tr.vegetables .meal-image:hover {
+	background-position: 0 -64px;
+}
+#step-2 table tr .value-field {
+	font-family:georgia;
+}
+#step-2 table tr .minus-button, #step-2 table tr .plus-button {
+	width: 19px;
+	height:19px;
+	background-image:url('../img/plusminus.jpg');
+	cursor:pointer;
+}
+#step-2 table tr .minus-button { background-position: 0 0; }
+#step-2 table tr .plus-button { background-position: -19px 0; }
+#step-2 table tr .minus-button:hover { background-position: 0 -18px; }
+#step-2 table tr .plus-button:hover { background-position: -19px -18px; }
+
+#step-2 .step-title {
+	width:100%;
+	text-align:center;
+}
+
+div.step div.step-overlay {
+	 -pie-background: rgba(0,0,0,0.8);
+}
+#step-2 .overlay-content {
+	margin-right:20px !important;
+}
+
+#water-quantity{
+	top:340px !important;
+}
+#water-quantity .sign-plus-minus {
+	width:45px;
+	height:45px;
+	background-image:url('../img/plus_minus_signs.jpg');
+	display:inline-block;
+}
+#water-quantity .sign-plus{background-position:0 -45px;}
+#water-quantity .sign-plus:hover{background-position:-45px -45px;}
+#water-quantity .sign-minus{background-position: 0 0;}
+#water-quantity .sign-minus:hover{background-position:-45px 0;}
+
+#water-images img {
+	margin-left:5px;
+	margin-right:5px;
+	}
+#water-images {
+	height:120px;
+}
+
+#step-4 {
+	height:450px !important;
+}
+
+.actAskImg {
+	display: inline-block;
+	width:19px;
+	height:19px;
+	background-image:url('../img/ask_act.jpg');
+	background-position: 0 0;
+}
+.actAskImg:hover {
+	background-position: 0 -19px;	
+}
+
+.activity .title {
+	display:inline-block;
+	}
+	
+.img-act-bike {
+	background-image:url('../img/act_bike.png');
+}
+.img-act-lift {
+	background-image:url('../img/act_lift.png');
+}
+.img-act-bike, .img-act-lift {
+	display:inline-block;
+	width:87px;
+	height:87px;
+	background-position:0 0;
+}
+.img-act-bike:hover, .img-act-lift:hover, .img-act-bike.active, .img-act-lift.active {
+	background-position:0 -89px;
+}
+.img-act-bike.active:hover, .img-act-lift.active:hover {
+	background-position:0 0;
+}
+
+#step-5 .activity-time-selector-button.less-time {
+	background-position:0 0;
+}
+#step-5 .activity-time-selector-button.less-time:hover {
+	background-position:0 -18px;
+}
+#step-5 .activity-time-selector-button.more-time {
+	background-position:-19px 0;
+}
+#step-5 .activity-time-selector-button.more-time:hover {
+	background-position:-19px -18px;
+}
+#step-5 .activity-time-selector-button {
+	width:19px;
+	height:19px;
+	background-image:url('../img/plusminus.jpg');
+	display: inline-block;
+}
+#submit {
+	height:42px !important;
+}
