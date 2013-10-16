@@ -17,6 +17,7 @@ $queries[] = '
   CREATE TABLE IF NOT EXISTS `###hbc_email_addresses` (
   `email` varchar(128) NOT NULL,
   `results_id` int(10) unsigned DEFAULT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`email`),
   UNIQUE KEY `results_id` (`results_id`)
   ) DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci';
