@@ -176,6 +176,10 @@ div.overlay-visible div.menu div.meal-btn:hover,
 #step-2 table tr .minus-button:hover { background-position: 0 -18px; }
 #step-2 table tr .plus-button:hover { background-position: -19px -18px; }
 
+#step-2 {
+	height: 650px;
+}
+
 #step-2 .step-title {
 	width:100%;
 	text-align:center;
@@ -186,6 +190,9 @@ div.step div.step-overlay {
 }
 #step-2 .overlay-content {
 	margin-right:20px !important;
+}
+#step-2 .overlay-contents {
+	top: 130px !important;
 }
 
 #water-quantity{
