@@ -231,7 +231,6 @@ $t = HBC_DB::get_all_texts_plain();
 		</div>
 		<div id="step-5" data-step="3" class="step step-5 window-1 static-window">
 			<div id="step-5-overlay" class="step-overlay">
-				<img class="ask-sign" src="img/ask_huge.png" width="90" height="90"/>
 				<div class="overlay-contents">
 					<div class="overlay-title">
 						PREGNANT (exercise)
