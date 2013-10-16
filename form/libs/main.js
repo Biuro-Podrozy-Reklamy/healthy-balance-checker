@@ -111,7 +111,7 @@ var step1data;
 var step2data;
 var step2mealdata;
 
-var collectedData={};
+var collectedData={age:"12-18"};
 var nextButton;
 var overlay=false;
 

@@ -1,10 +1,5 @@
 ﻿﻿<?php
 require('wp-load.php');
-
-if(HBC_Utils::is_browser_ie8()) 
-  //wp_redirect( 'Location: ' . plugins_url() . '/healthy-balance-checker/form/index-ie8.php', 302 );
-  //header('Location: ' . plugins_url() . '/healthy-balance-checker/form/index-ie8.php');
-
 $t = HBC_DB::get_all_texts_plain();
 
 ?>

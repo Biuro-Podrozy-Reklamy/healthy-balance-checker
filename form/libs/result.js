@@ -102,6 +102,7 @@ var streakerDataAdded_u;
 var streakerDataAdded_r;
 var recommendedData;
 var recommendedDataActivity;
+var loadedData;
 
 function buildCriteria(data){
 	if(!pregnant&&!breastfeeding)
@@ -228,14 +229,11 @@ $( document ).ready( function(){
 	$('#step-6').css({'opacity':1, 'display':'block'});
 		$('#steps-container').css({'opacity':0, 'display':'block'});
 	$.getJSON('data-json.php', function(data){
-///////////////////////////////////////////////////////////
-// CREATE VIS & GROUPS ////////////////////////////////////
-///////////////////////////////////////////////////////////
-plateData=data.steps['step-2'].meal;
 
-buildCriteria(data);
-
-fillDescription(data);
+	loadedData=data;
+	plateData=data.steps['step-2'].meal;
+	buildCriteria(data);
+	fillDescription(data);
 
 	$('.activity-time-preview[data-role="user"]').html(intToHours(parseInt(act_h)+parseInt(act_m)).replace(':',' : '));
 	if(!pregnant)
