@@ -60,6 +60,7 @@ $default_texts = <<<QwErTy
 ('activity_info_if_pregnant', 'Info if pregnant', 'If you are pregnant, speak with your doctor about what physical activities are recommended for you and your baby. Regular exercise should be low impact options such as walking, swimming, yoga or pilates.', NOW(), '4. Activity', 0),
 ('food_descr_middle_water', 'Description - water (middle)', 'How many glasses do you drink each day?', NOW(), '2. Food Intake', 0),
 ('food_descr_top', 'Description - top', '\r\n<p>Drag the icons from the different food groups onto your plate to reflect how many serves of each you eat on a typical day. Don’t forget to think about foods that may be ingredients in dishes or meals you eat. For example, if your lasagna recipe had pasta, meat, cheese and zucchini, make sure you add the portions to each food group.</p>\r\n', NOW(), '2. Food Intake', 0),
+('food_descr_top_ie8', 'Description - top for ie8', '\r\n<p>Use the counters to show how many serves of each food group you eat on a typical day. Don’t forget to think about foods that may be ingredients in dishes or meals you eat. For example, if your lasagna recipe had pasta, meat, cheese and zucchini, make sure you add the portions to each food group.</p>\r\n', NOW(), '2. Food Intake', 0),
 ('food_descr_top_fats', 'Description - fats (top)', 'What fats, oils, and spreads do you use on a regular basis?<br />Select the ones below that you use.', NOW(), '2. Food Intake', 0),
 ('food_descr_top_water', 'Description - water (top)', 'How many glasses of water do you drink each day? Add the number of glasses you drink on a typical day.', NOW(), '2. Food Intake', 0),
 ('food_info_dairy', 'About dairy', 'This includes products made from cow’s milk, soy, cereal or nut milk. A serve of milk, yoghurt or cheese is:<ul><li>2 slices of reduced-fat hard cheese</li><li>½ cup ricotta cheese</li><li>a small tub of reduced fat yoghurt</li><li>1 cup of milk or 1 cup of soy milk</li></ul>', NOW(), '2. Food Intake', 0),
@@ -77,6 +78,7 @@ $default_texts = <<<QwErTy
 ('profile_if_pregnant', 'Info if pregnant', 'If you are pregnant, speak to your healthcare professional about what eating plan is best for you and your baby. For example, the dietary guidelines suggest pregnant women eat more protein (3.5 serves of foods such as lean meat and vegetarian alternatives), and more grains and cereals (8.5 serves).', NOW(), '1. Profile', 0),
 ('profile_if_under_12', 'Comment if under 12', 'Are you under 12? Check your Energy Balance <a href="https://www.eatforhealth.gov.au/nutrition-calculators/food-balance" target="_BLANK">here</a>', NOW(), '1. Profile', 0),
 ('results_descr_top', 'Description - top', 'You’re done! See below for your results. Compare your daily plate with the recommended daily plate, and see some great tips tailored to help you meet the Australian Guide to Healthy Eating and get your recommended physical activity each day.', NOW(), '5. Results', 0),
+('results_descr_top_ie8', 'Description - top for ie8', 'You’re done! See below for results. Compare your results with the recommended amounts for daily food intake and weekly activity, and see some great tips tailored to help you meet the Australian Guide to Healthy Eating and get your recommended physical activity each day.', NOW(), '5. Results', 0),
 ('tips_activity_12_18_inc', 'Tips - activity, 12-18, increase', '', NOW(), '5. Results', 1),
 ('tips_activity_12_18_ok', 'Tips - activity, 12-18, sufficient', '', NOW(), '5. Results', 1),
 ('tips_activity_19_50_inc', 'Tips - activity, 19-50, increase', '', NOW(), '5. Results', 1),
@@ -94,8 +96,8 @@ $default_texts = <<<QwErTy
 ('tips_food_discr_inc', 'Tips - food, discretionary, increase', '', NOW(), '5. Results', 1),
 ('tips_food_fruit_dec', 'Tips - food, fruit, decrease', '', NOW(), '5. Results', 1),
 ('tips_food_fruit_inc', 'Tips - food, fruit, increase', '', NOW(), '5. Results', 1),
-('tips_food_general_bad', 'General tips - food, not satisfactory', '\r\n<p>By comparing the two plates above, you can see that you might benefit from some small changes to your eating pattern. To help achieve and maintain energy balance, it is important to enjoy a wide variety of nutritious foods from these food groups every day.</p>\r\n', NOW(), '5. Results', 0),
-('tips_food_general_ok', 'General tips - food, satisfactory', '\r\n<p>By comparing the two plates above, you can see that you are doing a great job of meeting the recommended food groups. Remember to enjoy a wide variety of nutritious foods from these food groups every day.</p>\r\n', NOW(), '5. Results', 0),
+('tips_food_general_bad', 'General tips - food, not satisfactory', '\r\n<p>By comparing the results above, you can see that you might benefit from some small changes to your eating pattern. To help achieve and maintain energy balance, it is important to enjoy a wide variety of nutritious foods from these food groups every day.</p>\r\n', NOW(), '5. Results', 0),
+('tips_food_general_ok', 'General tips - food, satisfactory', '\r\n<p>By comparing the results above, you can see that you are doing a great job of meeting the recommended food groups. Remember to enjoy a wide variety of nutritious foods from these food groups every day.</p>\r\n', NOW(), '5. Results', 0),
 ('tips_food_grains_dec', 'Tips - food, grains, decrease', '', NOW(), '5. Results', 1),
 ('tips_food_grains_inc', 'Tips - food, grains, increase', '', NOW(), '5. Results', 1),
 ('tips_food_meat_dec', 'Tips - food, meat, decrease', '', NOW(), '5. Results', 1),
@@ -164,7 +166,3 @@ if($wpdb->get_var('SELECT COUNT(*) FROM `' . $wpdb->prefix . 'hbc_texts`') === '
 	  
 	$wpdb->query($query);
 }
-
-
-
-
