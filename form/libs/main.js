@@ -346,6 +346,10 @@ $( document ).ready( function(){
 		
 		initStep(currentStep);
 	}
+    
+    setInterval(function() {
+        requestIFrameResize(0, false);
+    }, 1000);
 });
 	function initStep(p){
 		if(navigator.userAgent.indexOf('Firefox')>-1) $('#app-wrapper').addClass('ff');
@@ -374,16 +378,18 @@ $( document ).ready( function(){
 			$('#step-description').empty().html(stepsdata['step-'+p].description);
 			if($('#step-description').text().length>1)
 				$('#step-description').animate({opacity:1, 'height':$(this)[0].scrollHeight}, 300, function() {
-					requestIFrameResize(50, p > 0);
+					requestIFrameResize(0, p > 0);
 				});
 			else
 				$('#step-description').animate({opacity:1, 'height':0}, 300, function() {
-					requestIFrameResize(50, p > 0);
+					requestIFrameResize(0, p > 0);
 				});
 		});
 		
 		$('#step-'+p).css({'opacity':1, 'display':'block'});
-		$('#steps-container').delay(500).fadeIn(300);
+		$('#steps-container').delay(500).fadeIn(300, function() {
+            requestIFrameResize(0, false);
+        });
 		if(stepsInited[p]){
 			enableNext();
 		}else{

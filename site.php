@@ -66,7 +66,7 @@ class HBC_Site
 		$default_args = array(
 		  'width' => '100%',
 		  'url' => plugins_url() . '/healthy-balance-checker/form/',
-		  'height' => 900,
+		  'height' => 1100,
 		  'scrolling' => FALSE
 		  );
 		
@@ -75,9 +75,45 @@ class HBC_Site
 		if(HBC_Utils::is_num($args['width'])) $args['width'] .= 'px';
 		if(HBC_Utils::is_num($args['height'])) $args['height'] .= 'px';
 		
-		echo '<iframe frameBorder="0" seamless id="hbc-iframe" scrolling="', ($args['scrolling'] ? 'yes' : 'no'), '"',
+		echo '<iframe seamless id="hbc-iframe" scrolling="', ($args['scrolling'] ? 'yes' : 'no'), '"',
 		  'style="border: 0px none; width: ', htmlspecialchars($args['width']), '; height: ', htmlspecialchars($args['height']), '" ',
 		  'src="', htmlspecialchars($args['url']), '"></iframe>';
+        echo '<script type="text/javascript">
+		function hbc_resizeIFrame(extraSpace, scroll)
+		{
+			var iframe = document.getElementById("hbc-iframe");
+			if(iframe)
+			{
+				//alert("resize " + iframe.contentWindow.document.body.offsetHeight);
+				extraSpace = typeof(extraSpace) == "number" ? extraSpace : 0;
+				
+				if(scroll && typeof(jQuery) !== undefined && jQuery.scrollTo)
+				  jQuery.scrollTo(iframe, 300);
+				/*console.log(iframe.contentWindow.document.body.offsetHeight, extraSpace);*/
+				iframe.style.height = (iframe.contentWindow.document.body.offsetHeight + extraSpace) + "px";
+				
+			}
+		}
+		</script>
+        <script type="text/javascript">
+        <!--
+        function autoResize(id){
+            var newheight;
+            var newwidth;
+            
+            if(document.getElementById){
+                newheight=document.getElementById(id).contentWindow.document.body.scrollHeight;
+                newwidth=document.getElementById(id).contentWindow.document.body.scrollWidth;
+            }
+
+            document.getElementById(id).height= (newheight) + "px";
+            document.getElementById(id).width= (newwidth) + "px";
+        }
+        //-->
+        setInterval(function() {
+            //autoResize("hbc-iframe");
+        }, 1000);
+        </script>';
 	}
 	
 }

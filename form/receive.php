@@ -42,6 +42,30 @@ var resultUrl="'.$rcode.'";
 <!--<link rel="stylesheet" type="text/css" href="styles/jquery.svg.css"> 
 <script type="text/javascript" src="libs/jquery.svg.min.js"></script>
 <script type="text/javascript" src="libs/jquery.svgdom.min.js"></script>-->
+<script type="text/javascript">
+function requestIFrameResize(extraSpace, scroll)
+{
+	if(window.parent)
+	{
+		if(window.parent.hbc_resizeIFrame)
+		{
+			window.parent.hbc_resizeIFrame(extraSpace, scroll);
+		}
+		else if(window.parent.postMessage)
+		{
+			window.parent.postMessage({ 
+			  height: $('body').outerHeight() + parseInt(extraSpace), 
+			  scroll: scroll 
+			  }, '*');
+		}
+	}
+}
+$(document).ready(function() {
+    setInterval(function() {
+        requestIFrameResize(0, false);
+    }, 1000);
+});
+</script>
 </head>
 <body>
 <div id="app-wrapper">

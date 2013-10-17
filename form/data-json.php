@@ -1,12 +1,9 @@
-﻿<?php
+<?php
 require('wp-load.php');
 
 $t = HBC_DB::get_all_texts_plain(TRUE);
 $st = HBC_DB::get_all_subtexts_plain(TRUE);
-
-?>
-
-{
+?>{
 	"steps": {
 		"step-0": {
 			"substep_number":"0",
@@ -287,7 +284,7 @@ $st = HBC_DB::get_all_subtexts_plain(TRUE);
 			"cereals":[8,9],
 			"cereals-r":8.5,
 			"discretionary":0,
-			"activity":"Special copy for pregnant Women."
+			"activity":"N/A"
 		},
 		"breastfeeding":{
 			"fruit":[2,4],

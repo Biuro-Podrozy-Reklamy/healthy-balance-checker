@@ -102,14 +102,14 @@ function SVG(tag)
 function nextStep(p){
 	nextButton.addClass('disabled');
 	if(typeof p=="undefined"){
-		console.log('going to next step: '+(currentStep+1));
+		//console.log('going to next step: '+(currentStep+1));
 		$('#steps-container').fadeOut(300, function(){
 			$('#step-'+currentStep).hide();
 			currentStep++;
 			initStep(currentStep);
 		})
 	}else{
-		console.log('going to step: '+(p));
+		//console.log('going to step: '+(p));
 		$('#steps-container').fadeOut(300, function(){
 			$('#step-'+currentStep).hide();
 			currentStep=p;
@@ -446,7 +446,7 @@ $( document ).ready( function(){
 			$('#plate-chart').droppable({ accept: ".meal-btn-drag",
 			 drop: function( event, ui ) {
 					mealsQuantity[ui.draggable.attr("data-meal")-1]++;
-					console.log('dropping: '+(ui.draggable.attr("data-meal")-1))
+					//console.log('dropping: '+(ui.draggable.attr("data-meal")-1))
 					update();
 					enableNext();
 					setTimeout(function(){
@@ -623,7 +623,7 @@ $( document ).ready( function(){
 					if(mealsQuantity[item]>0)
 						smallestMeal=Math.min(smallestMeal,mealsQuantity[item]);
 				}
-				console.log('all: '+allMeals+', smallest: '+smallestMeal);
+				//console.log('all: '+allMeals+', smallest: '+smallestMeal);
 				if(allMeals==smallestMeal){
 					circlePadding=0;
 				}else{
@@ -819,7 +819,7 @@ $( document ).ready( function(){
 				setTimeout(function(){
 					$({twidth:$('#water-images>img').width()}).animate({twidth:570/val}, {
 						start: function(){
-							console.log(btnval);
+							//console.log(btnval);
 								if(!btnval){
 									//alert('anim before');
 									for(var iter=0; iter<=12; iter++){
@@ -837,7 +837,7 @@ $( document ).ready( function(){
 							$('#water-images>img').attr('width',Math.min(104,value));
 						},
 						done: function(){
-							console.log(btnval);
+							//console.log(btnval);
 								if(btnval){
 									//alert('anim after');
 									for(var iter=0; iter<=12; iter++){
@@ -878,7 +878,7 @@ $( document ).ready( function(){
 			$('.activity-time-selector div[data-role="change"]').on('mousedown',function(){
 				collectedData['activity-'+$(this).attr('data-property')]+=parseInt($(this).attr('data-value'));
 				//console.log($(this).parent().children('div[data-role="value"]'))
-				console.log($(this).parent().find('div[data-role="value"]'))
+				//console.log($(this).parent().find('div[data-role="value"]'))
 				$(this).parent().find('div[data-role="value"]').html(intToHours(collectedData['activity-'+$(this).attr('data-property')]));
 				})
 		}
