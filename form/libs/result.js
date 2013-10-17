@@ -1010,7 +1010,7 @@ function update_r() {
 			$('#step-description').css({'height':$('#step-description').height()})
 		$('#step-description').animate({opacity:0}, 300, function(){
 			//$('#step-description').css({'height':'auto'})
-			$('#step-description').empty().html('You’re done! See below for your results. Compare your daily plate with the recommended daily plate, and see some great tips tailored for you to help balance your energy levels by what you eat, drink and how active you are.');
+			$('#step-description').empty().html('You’re done! See below for your results. Compare your daily plate with the recommended daily plate, and see some great tips tailored to help you meet the Australian Guide to Healthy Eating and get your recommended physical activity each day.');
 			$('#step-description').animate({opacity:1, 'height':$(this)[0].scrollHeight}, 300);
 			$('#steps-bar .step-button').css('display','inline-block').fadeIn(300);
 		});
