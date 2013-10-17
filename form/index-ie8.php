@@ -2,7 +2,6 @@
 require('wp-load.php');
 
 $t = HBC_DB::get_all_texts_plain();
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -10,7 +9,9 @@ $t = HBC_DB::get_all_texts_plain();
 <head>
 <script type="text/javascript">
 	
-	var loadedJsonData=<?php $JSONdata=include('data-json.php');
+	var loadedJsonData=<?php
+		$ie8=true;
+		$JSONdata=include('data-json.php');
 		//$jsonDATA = trim(preg_replace('/\s\s+/', ' ', $jsonDATA));
 		echo $jsonDATA;
 		?>
@@ -65,12 +66,12 @@ $t = HBC_DB::get_all_texts_plain();
 				</div>
 			</div>
 			<div class="spacer"></div>
-			<div class="step-title center">Select Your gender</div>
+			<div class="step-title center">Select your gender</div>
 			<div id="genders" class="center">
 				<div data-gender="female" class="gender_img" id="gender_female_img"></div>
 				<div data-gender="male" class="gender_img" id="gender_male_img"></div>
 			</div>
-			<div class="step-title center">Select Your age group</div>
+			<div class="step-title center">Select your age group</div>
 			<div id="age-slider-labels" class="dark-blue georgia"></div>
 			<div id="age-slider" class="center" data-val="18">
 				<div class="indicator"></div>
@@ -255,7 +256,7 @@ $t = HBC_DB::get_all_texts_plain();
 				echo $pregreplaceddescrebottom; ?></div>
 			<div id="activities" class="center full-width">
 			</div>
-		<div id="activities-total" class="georgia center dark-blue">Total: <div data-role="value">0:00</div></div>
+		<div id="activities-total" class="georgia center dark-blue">Total per week: <div data-role="value">0:00</div></div>
 		</div>
 	</div>
 	<div id="next-button" class="button next disabled"></div>
