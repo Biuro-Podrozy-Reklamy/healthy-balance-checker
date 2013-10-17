@@ -46,7 +46,7 @@ var resultUrl="'.$rcode.'";
 	<div id="app-header">
 	<div id="app-title" class="full-width center"><h1 class="dark-blue">Healthy Balance Checker</h1></div>
 		<div id="step-description" class="georgia dark-blue"><?php
-				$pregreplaceddescrebottom=preg_replace('#(\\\r)#','<br/>',$t['results_descr_top']);
+				$pregreplaceddescrebottom=preg_replace('#(\\\r)#','<br/>',$t['results_descr_top_ie8']);
 				$pregreplaceddescrebottom=preg_replace('#(\\\n)#','',$pregreplaceddescrebottom);
 				$pregreplaceddescrebottom=str_replace('\u2019','`',$pregreplaceddescrebottom);
 				$pregreplaceddescrebottom=trim($pregreplaceddescrebottom,'"');
