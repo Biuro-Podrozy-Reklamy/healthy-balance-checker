@@ -3,7 +3,7 @@ require('wp-load.php');
 
 $t = HBC_DB::get_all_texts_plain(TRUE);
 $st = HBC_DB::get_all_subtexts_plain(TRUE);
-<<<<<<< HEAD
+
 
 $food_descr_top=$t['food_descr_top'];
 
@@ -12,11 +12,7 @@ if($ie8==true){
 }
 
 ?>
-
 {
-=======
-?>{
->>>>>>> 86fa299adc55e7785ccbf4ab44ea5c0c664e8589
 	"steps": {
 		"step-0": {
 			"substep_number":"0",
