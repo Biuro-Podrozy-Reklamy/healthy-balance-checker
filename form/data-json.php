@@ -4,6 +4,12 @@ require('wp-load.php');
 $t = HBC_DB::get_all_texts_plain(TRUE);
 $st = HBC_DB::get_all_subtexts_plain(TRUE);
 
+$food_descr_top=$t['food_descr_top'];
+
+if($ie8==true){
+	$food_descr_top=$t['food_descr_top_ie8'];	
+}
+
 ?>
 
 {
@@ -27,7 +33,7 @@ $st = HBC_DB::get_all_subtexts_plain(TRUE);
 			"step_number":"2",
 			"type":"step-bar",
 			"title":"Step 2 - Food Intake",
-			"description":<?= $t['food_descr_top'] ?>,
+			"description":<?= $food_descr_top ?>,
 			"meal": [
 				{
 					"name":"fruit",
