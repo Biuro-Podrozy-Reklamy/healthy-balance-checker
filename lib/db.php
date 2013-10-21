@@ -232,7 +232,7 @@ class HBC_DB
 		}
 		else $id = 'NULL';
 		
-		$query = 'INSERT IGNORE INTO `' . $wpdb->prefix . 'hbc_email_addresses` (`email`, `results_id`)
+		$query = 'INSERT INTO `' . $wpdb->prefix . 'hbc_email_addresses` (`email`, `results_id`)
 		  VALUES (%s, ' . $id . ')';
 		  
 		$query = $wpdb->prepare($query, $email);

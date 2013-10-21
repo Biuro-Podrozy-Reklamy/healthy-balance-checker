@@ -15,11 +15,12 @@ $queries[] = '
 
 $queries[] = '
   CREATE TABLE IF NOT EXISTS `###hbc_email_addresses` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(128) NOT NULL,
   `results_id` int(10) unsigned DEFAULT NULL,
   `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `email_sent` ENUM(  \'yes\',  \'no\' ) NOT NULL DEFAULT  \'no\',
-  PRIMARY KEY (`email`),
+  PRIMARY KEY (`id`),
   UNIQUE KEY `results_id` (`results_id`)
   ) DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci';
   
